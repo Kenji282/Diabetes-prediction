@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('pexels.jpg');
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6; /* Improved readability */
+    animation: fadeIn 1s; /* Added fade-in animation */
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8); /* Updated for transparency */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    animation: slideIn 0.5s; /* Slide-in animation */
+}
+
+/* Other styles remain unchanged */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+    text-align: left;
+}
+
+input[type="number"] {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="number"]:hover {
+    border-color: #3498db; /* Added hover effect */
+}
+
+input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+    background: white;
+}
+
+button {
+    grid-column: span 2;
+    padding: 15px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease, transform 0.3s; /* Added transform transition */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%; /* Made button width responsive */
+    margin: 0 auto;
+    animation: pulse 1s infinite;
+}
+
+button:hover {
+    transform: scale(1.05); /* Added scaling effect on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Added shadow effect on hover */
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Result Styles */
+h3 {
+    margin-top: 30px;
+    color: #27ae60;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+    background: rgba(39,174,96,0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(39,174,96,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    form {
+        grid-template-columns: 1fr;
+    }
+    
+    button {
+        grid-column: span 1;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

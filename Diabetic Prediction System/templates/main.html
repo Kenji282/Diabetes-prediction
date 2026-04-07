@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-updated.css') }}">
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Welcome to Diabetes Prediction System</h1>
+    <nav>
+        <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+        <form action="{{ url_for('logout') }}" method="get" style="display:inline;">
+            <button type="submit" class="nav-button">Logout</button>
+        </form>
+    </nav>
+   
+</header>
+
+
+        <main>
+            <p class="welcome-message">We are glad to have you here! Please make a prediction or explore the information available.</p>
+
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    
+                        <form action="{{ url_for('predict') }}" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-predict">Make Prediction</button>
+                        </form>
+                        <a href="{{ url_for('diabetes_pedigree')}}" class="btn btn-diabetes-pedigree">Calculate Diabetes Pedigree</a>
+                        <a href="{{ url_for('info')}}" class="btn btn-info">Information need to know about Diabetics</a>
+                   
+                        <a href="{{ url_for('skin_thickness') }}" class="btn btn-skin-thickness">Skin Thickness</a>
+                        <a href="{{ url_for('bmi') }}" class="btn btn-bmi">BMI</a>
+            </section>
+        </main>
+
+        <footer>
+           
+        </footer>
+    </div>
+</body>
+</html>

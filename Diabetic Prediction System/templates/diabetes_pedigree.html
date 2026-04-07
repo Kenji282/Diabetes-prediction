@@ -1,0 +1,26 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style7.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Pedigree Function Calculator</h1>
+    <form method="POST">
+        <label for="mother">Mother (1 if diabetic, 0 if not):</label>
+        <input type="number" name="mother" required><br><br>
+        <label for="father">Father (1 if diabetic, 0 if not):</label>
+        <input type="number" name="father" required><br><br>
+        <label for="siblings">Siblings (number of diabetic siblings):</label>
+        <input type="number" name="siblings" required><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if pedigree_score is not none %}
+        <h2>Your Diabetes Pedigree Score: {{ pedigree_score }}</h2>
+    {% endif %}
+</body>
+</html>

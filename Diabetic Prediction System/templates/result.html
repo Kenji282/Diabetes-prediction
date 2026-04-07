@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style4.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+<h3>{{ prediction }}</h3>
+
+
+<!-- Removed unnecessary pedigree score display -->
+
+
+<button onclick="goBack()">Go Back</button>
+<script>
+    function goBack() {
+        window.location.href = "{{ url_for('main') }}";  // Updated to point to the correct route
+    }
+</script>
+
+
+    </div>
+</body>
+</html>

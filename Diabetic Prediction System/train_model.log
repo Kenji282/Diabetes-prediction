@@ -1,0 +1,74 @@
+DEBUG:root:Input features for prediction:      Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age
+60             2       84              0              0        0   0.0                     0.304   21
+618            9      112             82             24        0  28.2                     1.282   50
+346            1      139             46             19       83  28.7                     0.654   22
+294            0      161             50              0        0  21.9                     0.254   65
+231            6      134             80             37      370  46.2                     0.238   46
+2025-03-16 10:27:33,927 - DEBUG - Input features for prediction:      Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age
+60             2       84              0              0        0   0.0                     0.304   21
+618            9      112             82             24        0  28.2                     1.282   50
+346            1      139             46             19       83  28.7                     0.654   22
+294            0      161             50              0        0  21.9                     0.254   65
+231            6      134             80             37      370  46.2                     0.238   46
+2025-03-16 10:27:33,940 - INFO - Model training completed successfully.
+2025-03-16 10:27:33,997 - INFO - Model and scaler saved successfully.
+2025-03-16 11:53:43,299 - DEBUG - Input features for prediction:      Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age
+60             2       84              0              0        0   0.0                     0.304   21
+618            9      112             82             24        0  28.2                     1.282   50
+346            1      139             46             19       83  28.7                     0.654   22
+294            0      161             50              0        0  21.9                     0.254   65
+231            6      134             80             37      370  46.2                     0.238   46
+2025-03-16 11:53:43,332 - INFO - Model training completed successfully.
+2025-03-16 11:53:43,384 - INFO - Model and scaler saved successfully.
+2025-03-16 12:36:17,414 - INFO - DataFrame loaded successfully. Columns: ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
+2025-03-16 12:36:17,428 - INFO - Feature names in X after dropping 'Outcome': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+2025-03-16 12:36:17,452 - DEBUG - Input features for prediction:      Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age
+60             2       84              0              0        0   0.0                     0.304   21
+618            9      112             82             24        0  28.2                     1.282   50
+346            1      139             46             19       83  28.7                     0.654   22
+294            0      161             50              0        0  21.9                     0.254   65
+231            6      134             80             37      370  46.2                     0.238   46
+2025-03-16 12:36:17,473 - INFO - Model training completed successfully.
+2025-03-16 12:36:17,473 - DEBUG - Trained model coefficients: [[ 0.21255394  1.07130143 -0.24782647  0.0457288  -0.20078252  0.77818216
+   0.23062467  0.42120732]]
+2025-03-16 12:36:17,476 - INFO - Prediction results: [0 0 0 0 0 0 0 1 1 1 0 1 0 0 0 0 0 0 1 1 0 0 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1
+ 0 1 1 0 1 1 0 0 1 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 0 0 0 0 1 0 1 0 1 1 0 0 0
+ 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 0 0 1 0 1 0 1 0 1 0 0 1 0 1 0
+ 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 1 1 1 1 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0]
+2025-03-16 12:36:17,478 - INFO - Model Accuracy: 0.75
+2025-03-16 12:36:17,493 - INFO - Model and scaler saved successfully.
+2025-03-16 12:49:52,713 - INFO - DataFrame loaded successfully. Columns: ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']
+2025-03-16 12:49:52,717 - INFO - Feature names in X after dropping 'Outcome': ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+2025-03-16 12:49:52,728 - DEBUG - Input features for prediction:      Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age
+60             2       84              0              0        0   0.0                     0.304   21
+618            9      112             82             24        0  28.2                     1.282   50
+346            1      139             46             19       83  28.7                     0.654   22
+294            0      161             50              0        0  21.9                     0.254   65
+231            6      134             80             37      370  46.2                     0.238   46
+2025-03-16 12:49:52,743 - INFO - Model training completed successfully.
+2025-03-16 12:49:52,744 - DEBUG - Trained model coefficients: [[ 0.21255394  1.07130143 -0.24782647  0.0457288  -0.20078252  0.77818216
+   0.23062467  0.42120732]]
+2025-03-16 12:49:52,746 - INFO - Prediction results: [0 0 0 0 0 0 0 1 1 1 0 1 0 0 0 0 0 0 1 1 0 0 1 0 1 1 0 0 0 0 1 1 1 1 1 1 1
+ 0 1 1 0 1 1 0 0 1 1 0 0 1 0 1 1 0 0 0 1 0 0 1 1 0 0 0 0 1 0 1 0 1 1 0 0 0
+ 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 0 0 1 0 1 0 1 0 1 0 0 1 0 1 0
+ 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 1 1 1 1 0 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0
+ 0 1 0 0 0 0]
+2025-03-16 12:49:52,747 - INFO - Model Accuracy: 0.75
+2025-03-16 12:49:52,773 - ERROR - Error connecting to database or saving prediction: name 'User' is not defined
+2025-03-16 14:32:33,969 - INFO - Dataset loaded successfully.
+2025-03-16 14:32:34,214 - INFO - Random Forest Model Accuracy: 0.72
+2025-03-16 14:32:34,214 - INFO - Confusion Matrix:
+[[77 22]
+ [21 34]]
+2025-03-16 14:32:34,214 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.78      0.78        99
+           1       0.61      0.62      0.61        55
+
+    accuracy                           0.72       154
+   macro avg       0.70      0.70      0.70       154
+weighted avg       0.72      0.72      0.72       154
+
+2025-03-16 14:32:34,262 - INFO - Random Forest model and scaler saved successfully.

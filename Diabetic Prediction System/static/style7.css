@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('pexels.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s;
+}
+
+/* Centered Container */
+.container {
+    max-width: 600px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: slideIn 0.5s;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label Styling */
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+/* Input Styling */
+input[type="number"] {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Input Hover & Focus Effects */
+input[type="number"]:hover,
+input[type="number"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52,152,219,0.3);
+    background: white;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 15px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    margin-top: 10px;
+    animation: pulse 1s infinite;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Result Styling */
+h3 {
+    margin-top: 20px;
+    color: #27ae60;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+    background: rgba(39,174,96,0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(39,174,96,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}

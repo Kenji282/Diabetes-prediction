@@ -1,0 +1,126 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards; /* Added animation */
+}
+
+body, html {
+    height: 100%;
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-image: url('homeimage.jpg'); /* Updated background image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the background image */
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    padding: 20px 40px; /* Standard padding for consistency */
+    box-shadow: none; /* Remove shadow for a flatter design */
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjusted font size for better appearance */
+    margin-bottom: 10px; /* Reduced margin for better spacing */
+    text-align: right; /* Align heading to the right */
+    position: relative;
+    left: 60%;
+    top: 90%;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex; /* Align buttons to the right */
+    justify-content: flex-end; /* Align buttons to the right */
+    left: 50%;
+    top: 90%;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #007BFF; /* Original blue for consistency */
+    padding: 12px 24px; /* Increased padding for a more substantial button */
+    margin: 10px; /* Increased margin for better spacing between buttons */
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
